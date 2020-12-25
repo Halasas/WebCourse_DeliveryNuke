@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8" />
+        <title>Delivery Nuke</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+     <body>
+         <header>
+            <nav class="navbar">  
+                <a href="#products-mark">Продукты</a>
+                <a href="#reviewSection">Отзывы</a>
+                <img src="bombicon.svg">
+                <a href="History.html">История</a>
+                <a onClick="ShowContacts()">Контакты</a>
+            </nav>
+         </header>
+         <div class="fade" id="contacts">
+             <div class="popup">
+                <h1>Контакты</h1>
+                <span>В 40-х один из наших филиалов был где-то тут</span> <br>
+                <img src="map.png"><br>
+                <span>
+                    Пишите нам на почту<br>
+                    <a href = "mailto: nukes@topsecret.gov">nukes@topsecret.gov</a><br>
+                    Или звоните по телефону<br>
+                    <a href = "tel: +7(322)420-13-37">+7(322)420-13-37</a>
+                </span>
+             </div>
+        </div>
+        <div class="fade show" id="ads">
+            <div class="popup">
+                <button type="button" id="rageButton" class="my-button" style="position: absolute; top:5px; right: 5px;margin: 0;">X</button>
+                <img src=boom.svg style="box-shadow: none; width: 30%; margin: 0 35%;">
+                <h1>Ого, это же всплывающая в центре экрана реклама, которую все ненавидят!</h1>
+            </div>
+       </div>
+
+         <div id="products-mark" style="height: 5em;"></div>
+         <section class="product-line">
+            <h1> Ваши варианты <b>ЯРКОГО</b> будущего</h1>
+            <div style="display: flex; align-items: center; justify-content: space-around; flex-wrap: wrap;">
+                <div class="product">
+                    <img src="bomb1.svg">
+                    <h3>«Gadget»</h3>
+                    <span>Плутониевая бомба "Штучка" - та ещё штучка!</span><br>
+                    <button style="width: fit-content" type="button" class="my-button">Купить сейчас</button>
+                </div>
+                <div class="product">
+                    <img src="bomb2.svg">
+                    <h3>«Fat Man»</h3>
+                    <span>Плутониевая бомба "Толстяк" - ваш главный аргумент в споре!</span><br>
+                    <button style="width: fit-content" type="button" class="my-button">Купить сейчас</button>
+                </div>
+                <div class="product">
+                    <img src="bomb3.svg">
+                    <h3> «Little Boy»</h3>
+                    <span>Урановая бомба "Малыш" - это то, что заслужили ваши дети!</span><br>
+                    <button style="width: fit-content" type="button" class="my-button">Купить сейчас</button>
+                </div>
+            </div>
+         </section>
+         <section  class="best-choice">
+            <img src="bombicon.svg">
+            <div>
+                <h1>Лучшее предложение!</h1>
+                <span>Купите любую бомбу прямо сейчас и получите доставку на дом бесплатно!</span><br>
+                <button style="width: fit-content" type="button" class="my-button">Купить сейчас</button>
+            </div>
+         </section>
+         <section id="reviewSection" class="review-section">
+            <h1>Отзывы клиентов</h1>
+            <div id="reviewsContainer" style="display:flex; flex-wrap:wrap; justify-content: center;" id="review-section">
+
+            </div>
+         </section>
+         <section class="feedback">
+            <div style="margin: auto; width: fit-content;">
+                <h3>Напишите нам свой отзыв</h3>
+                <label for="usernameTextField">Имя</label>
+                <input id="usernameTextField" type="text" class="input-text" placeholder="Имя"><br>
+                <label for="reviewnputTextField">Текст отзыва</label><br>
+                <textarea id="reviewnputTextField" cols="40" rows="5" placeholder="Ваш хороший отзыв"></textarea><br>
+                <button type="button" onClick="SendComment()" class="my-button">Отправить отзыв</button>
+            </div> 
+        </section>
+        <template id="reviewTemplate">
+            <div class="review">
+                <h3>Name User</h3>
+                <span>Неплохо хорошо Норм так то ага да нууу вообще можно было и поярче бахнуть</span>
+            </div>
+        </template>
+     </body>
+    <script src="comments.js"></script>
+    <script src="contacts.js"></script>
+    <script src="popup_add.js"></script>
+</html>

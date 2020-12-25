@@ -1,0 +1,261 @@
+html {
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+body {
+    margin: 0;
+}
+header {
+    background-color:#fff;
+    position: fixed;
+    width: 100%;
+}
+
+@keyframes fadeNav {
+    0%   {color: #666; background-color: #eee; border-radius: 10px;}
+    100%   {color: #eee; background-color: #666; border-radius: 25px;}
+}
+
+@keyframes productSelect {
+    0%   {box-shadow: 0px 0px 10px 1px #999;}
+    100%   {box-shadow: 0px 0px 20px 2px #333;}
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.navbar a{
+    text-align: center;
+    color: #333;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar a:hover{
+    color: #eee;
+    background-color: #666;
+    border-radius: 30px;
+    border: none;
+    animation-name: fadeNav;
+    animation-duration: 0.2s;
+}
+
+.navbar img {
+    width: 5em;
+    padding:  0px 5px;
+}
+
+.product-line h1{
+    text-align: center;
+}
+
+.product-line b{
+    color: orange;
+}
+
+.product {
+    border: none;
+    width: 25%;
+    min-width: 15em;
+    box-shadow: 0px 0px 10px 1px #999;
+    border-radius: 15px;
+    
+    padding: 30px;
+    margin: 15px;
+    text-align: center;
+}
+
+.product:hover{
+    box-shadow: 0px 0px 20px 2px #333;
+    animation-name: productSelect;
+    animation-duration: 0.5s;
+}
+
+.product img{
+    width: 80%;
+    margin: 0% 10%;
+}
+
+.best-choice {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: orange;
+    margin: 100px 0px 0px 0px;
+    padding: 10px 30px;
+}
+
+.best-choice img {
+    width: 30%;
+    margin: 20px;
+}
+.best-choice div {
+    width: 60%;
+    word-wrap: break-word;
+    margin: 20px;
+}
+
+.my-button {
+    font-family: inherit;
+    margin: 20px auto 20px auto;
+    padding: 10px 20px 10px 20px;
+    width: fit-content;
+    outline: 0;
+    font-size: 1.3em;
+    border: none;
+    border-radius: 5px;
+    color: #eee;
+    background-color: #333;
+    transition-duration: 0.4s;
+    box-shadow: 0px 0px 10px 1px #666;
+}
+
+.my-button:hover{
+    color: #fff;
+    background-color: #777;
+}
+
+.my-button:active{
+    transition-duration: 0.0s;
+    color: #fff;
+    background-color: #aaa;
+}
+
+.review-section {
+    color: #000 ;
+    width: auto;
+    background-image: url(3130887.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px 30px;
+}
+
+.review-section h1{
+    text-align: center;
+    background-color: #eee;
+    width: fit-content;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 1px #666;
+}
+
+.review {
+    background-color: #eee;
+    width: 15em;
+    border-radius: 10px;
+    height: fit-content;
+    padding: 15px;
+    margin: 20px;
+    box-shadow: 0 0 10px 1px #666;
+}
+
+.review:hover {
+    box-shadow: 0px 0px 20px 2px #333;
+    animation-name: productSelect;
+    animation-duration: 0.5s;
+}
+
+.review h3 {
+    margin: 5px 0px;
+    border-bottom: 2px solid orange;
+}
+
+.feedback {
+    width: auto;
+    color: #eee;
+    background-color: #333;
+    padding: 10px 30px;
+}
+
+.feedback input{
+    box-sizing: border-box;
+    margin: 5px 0px 20px 0px;
+    padding: 2px 8px;
+    font-family: inherit;
+    width: 100%;
+    border: 0;
+    border-radius: 5px;
+    outline: 0;
+    font-size: 1.3em;
+    color: #eee;
+    background: #444;
+}
+.feedback textarea {
+    box-sizing: border-box;
+    font-family: inherit;
+    margin: 5px 0px 20px 0px;
+    padding: 2px 8px;
+    width: 100%;
+    border: 0;
+    border-radius: 5px;
+    outline: 0;
+    font-size: 1.3em;
+    color: #eee;
+    background: #444;
+    resize: none;
+}
+
+.feedback button{
+    font-family: inherit;
+    margin: 5px 0px 20px 0px;
+    width: 100%;
+    outline: 0;
+    font-size: 1.3em;
+    border: none;
+    border-radius: 5px;
+    color: #eee;
+    background-color: #666;
+    transition-duration: 0.4s;
+    box-shadow: 0px 0px 10px 1px #444;
+}
+
+.feedback button:hover{
+    color: #fff;
+    background-color: #777;
+}
+
+.feedback button:active{
+    transition-duration: 0.0s;
+    color: #fff;
+    background-color: #aaa;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 2px #333;
+    padding: 40px;
+}
+
+.popup img {
+    width: 70%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 1px #aaa;
+    margin: 30px 15%;
+    font-size: 1.2em;
+}
+
+.fade {
+    visibility: hidden;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.show {
+    visibility: visible;
+}
